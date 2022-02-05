@@ -22,8 +22,34 @@ Welcome to day 1 at BloomTech, today we are going to spend time setting up your 
 Now that you are all set up, it's time to learn a little more about the tools of the trade. Edit this file and answer the following questions. You can type your answer below the questions. You are going to need to start familiarizing yourself with the [GitHub docs](https://docs.github.com/en) doc short for documentation are the instructions on how to use a languge, or program. A large part of your job as a developer will be learning how to read and work with documentation. Please reference the GitHub docs when answering the questions below. If you cannot find what you are looking for in the docs, you can always start to practice your google skills. 
 
 1. What is git? What is the difference between git and GitHub?
+
+  Git is an open source distributed version control system. It is software for tracking changes in any set of files over time. What makes git open source is that its source code is made freely available and may be redistributed or modified. What makes git distributed is that these files and all their versions can exist in many machines at once.
+  GitHub, on the other hand, is a cloud-based hosting service that lets you manage files which are version-controlled by git. It is also a great tool for collaboration amongst developers.
+
+
 2. Why do we create a branch? 
+
+  A branch is a separate line of development. We need branching because it isolates our work from the rest of our team members. We can work on new features and bug fixes without interfering with other people’s code and the main/master branch. 
+
+
 3. What is the purpose of a pull request? 
+
+  Pull requests let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch. Pull requests allow multiple developers to collaborate and communicate more effectively.
+
+
 4. What is the command you can use to switch between branches? For example you are working on a feature branch and you want to switch back to main. 
+
+  To switch to main branch: git checkout main
+  To switch to a different branch: git checkout <existing_branch>
+  To switch to a new branch: git checkout -b <new_branch>
+
+
 5. Explain the difference between `git fetch`, `git merge` and `git pull` what does each command do? 
+
+  Git fetch downloads remote code from a repository's remote URL to your local computer. This code is saved as remote branches separate from the local branches in our repo. This allows us to review the commits before integrating them in our local working branches. Git merge merges that code into our local branch. Git pull does a git fetch followed by a git merge all in one command. 
+
+
 6. What is a merge conflict? How do you resolve a merge conflict? 
+
+  Merge conflicts happen when you merge branches that have competing commits, and Git needs your help to decide which changes to incorporate in the final merge. A competing commit is when two individuals make different changes to the same line of the same file on different branches in your Git repository. 
+  To resolve a merge conflict, we must manually edit the conflicted file to select the changes that we want to keep in the final merge. We also have tools to help us such as the conflict editor in GitHub and git command line tools.
